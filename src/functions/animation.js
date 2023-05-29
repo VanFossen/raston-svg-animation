@@ -16,9 +16,11 @@ export function startAnimation(time) {
 
   document.getElementById("move").style.animation =
     "slide 1s ease forwards infinite";
+  document.getElementById("move-laser").style.animation = "grow 1s infinite";
 
   setTimeout(function () {
     document.getElementById("move").style.animation = "";
+    document.getElementById("move-laser").style.animation = "";
     document.getElementById("animation").style.display = "inline";
   }, time);
 }

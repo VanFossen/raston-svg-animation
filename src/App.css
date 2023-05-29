@@ -34,6 +34,12 @@ button {
   display: none;
 }
 
+/* timing for animation */
+#move,
+#move-laser {
+  animation-delay: 0.1s;
+}
+
 /* SVG animation */
 /* https://youtu.be/UTHgr6NLeEw */
 @keyframes slide {
@@ -47,5 +53,23 @@ button {
 
   100% {
     transform: translate(none);
+  }
+}
+
+@keyframes grow {
+  0% {
+    /* width: 40px; */
+    /* transform: scale(1, 1); */
+  }
+
+  50% {
+    /* width: 80px; */
+    /* transform: scale(1.1, 1); */
+    transform: translateX(10px);
+  }
+
+  100% {
+    /* width: 40px; */
+    /* transform: scale(1, 1); */
   }
 }

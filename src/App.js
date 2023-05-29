@@ -8,7 +8,7 @@ import {
 } from "./functions/animation";
 
 // svg
-import { ReactComponent as MySVG } from "./svgs/drawing.svg";
+import { ReactComponent as MySVG } from "./svgs/drawing-laser.svg";
 
 // style
 import "./App.css";
