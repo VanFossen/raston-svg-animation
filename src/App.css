@@ -10,7 +10,42 @@
   min-height: 100vh;
 }
 
+/* size of the SVG */
 #svg {
   width: 75vh;
   height: auto;
+}
+
+/* button */
+#button-div {
+  padding: 20px;
+}
+
+button {
+  margin: 5px;
+}
+
+/* default laser positions */
+#laser-1 {
+  display: inline;
+}
+
+#laser-2 {
+  display: none;
+}
+
+/* SVG animation */
+/* https://youtu.be/UTHgr6NLeEw */
+@keyframes slide {
+  0% {
+    transform: translate(none);
+  }
+
+  50% {
+    transform: translate(50px);
+  }
+
+  100% {
+    transform: translate(none);
+  }
 }
