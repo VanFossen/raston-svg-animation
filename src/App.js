@@ -17,11 +17,12 @@ function App() {
   return (
     <div className="App">
       <MySVG id="svg" />
+
       <div id="button-div">
         <button onClick={() => setSourceOne()}>Source One</button>
         <button onClick={() => setSourceTwo()}>Source Two</button>
-        <button id="animation" onClick={() => startAnimation(5000)}>
-          Five Scans
+        <button id="animation" onClick={() => startAnimation(1000)}>
+          One Scan
         </button>
       </div>
     </div>

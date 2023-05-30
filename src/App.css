@@ -40,6 +40,10 @@ button {
   animation-delay: 0.1s;
 }
 
+#move-laser {
+  transform-origin: left;
+}
+
 /* SVG animation */
 /* https://youtu.be/UTHgr6NLeEw */
 @keyframes slide {
@@ -56,20 +60,14 @@ button {
   }
 }
 
-@keyframes grow {
+@keyframes increaseWidth {
   0% {
-    /* width: 40px; */
-    /* transform: scale(1, 1); */
+    transform: scaleX(1);
   }
-
   50% {
-    /* width: 80px; */
-    /* transform: scale(1.1, 1); */
-    transform: translateX(10px);
+    transform: scaleX(1.5);
   }
-
   100% {
-    /* width: 40px; */
-    /* transform: scale(1, 1); */
+    transform: scaleX(1);
   }
 }

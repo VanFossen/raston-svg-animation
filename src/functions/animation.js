@@ -12,11 +12,11 @@ export function setSourceTwo() {
 
 export function startAnimation(time) {
   document.getElementById("animation").style.display = "none";
-  document.getElementById("move").style.animation = "";
 
   document.getElementById("move").style.animation =
     "slide 1s ease forwards infinite";
-  document.getElementById("move-laser").style.animation = "grow 1s infinite";
+  document.getElementById("move-laser").style.animation =
+    "increaseWidth 1s infinite";
 
   setTimeout(function () {
     document.getElementById("move").style.animation = "";
